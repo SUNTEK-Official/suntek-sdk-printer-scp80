@@ -59,7 +59,7 @@ In code, encode the string as GB18030 (or GBK) before handing it to the queue.
 {
   printf '\033@'                        # ESC @ init
   printf 'TEST LINE\n'
- printf ' \n' | iconv -f UTF-8 -t GB18030
+  printf 'Receipt Print Test\n' | iconv -f UTF-8 -t GB18030
   printf '\n\n\n'                        # feed paper
 } > /tmp/ticket.bin
 lp -d SUNTEK-SCP80 -o raw /tmp/ticket.bin
