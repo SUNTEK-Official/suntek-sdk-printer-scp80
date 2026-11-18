@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gpsdk.demo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView"
+        android:layout_gravity="right" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnBluetoothConn"
+                    android:text="@string/str_bluetooth_connect" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnUsbConn"
+                    android:text="@string/str_usb_connect"
+                    android:singleLine="false" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnWifiConn"
+                    android:text="@string/str_wifi_connect" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnSerialPortConn"
+                    android:text="@string/str_serialport_connect" />
+
+                <Button
+                    android:id="@+id/btnTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnSerialTest"
+                    android:text="@string/str_new_activity" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_connState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/str_conn_state_disconnect"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnReceiptPrint"
+                    android:text="@string/str_receipt_print" />
+
+                <Button
+                    android:id="@+id/bt_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnCash"
+                    android:text="@string/str_cashbox" />
+
+                <Button
+                    android:id="@+id/btncutmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnCutMode"
+                    android:text="@string/str_cutmode" />
+
+                <Button
+                    android:id="@+id/btnCuttest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnCuttest"
+                    android:text="@string/str_cuttest" />
+
+                <Button
+                    android:id="@+id/btndensity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnDensity"
+                    android:text="@string/str_density" />
+
+                <Spinner
+                    android:id="@+id/spdensity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnFlashLogodownload"
+                    android:text="@string/str_logodownload" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnLabelPrint"
+                    android:text="@string/str_label_print" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnDisConn"
+                    android:text="@string/str_disconnect" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnPrinterState"
+                    android:text="@string/str_state_query" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_print_counts"
+                android:hint=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:onClick="btnReceiptAndLabelContinuityPrint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_conn_receipt_and_label_continuity_print"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:onClick="btnMoreDevices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_conn_devices"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

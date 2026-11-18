@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  iOS_SDKDemo
+//
+//  Created by yhb on 2021/3/29.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <PrinterSDK/PrinterSDK.h>
+#import "BluetoothTool.h"
+#import "SVProgressHUD.h"
+
+#define WeakSelf(type) __weak typeof(type) weak##type = type
+
+#if DEBUG
+#define Log(...)  NSLog(__VA_ARGS__)
+#else
+#define Log(...)
+#endif
+
+#endif /* PrefixHeader_pch */
