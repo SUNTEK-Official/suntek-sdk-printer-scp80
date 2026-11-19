@@ -1,9 +1,9 @@
 <div align="center">
   <a href="https://www.suntekai.com">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/logo-dark.png">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/logo-light.png">
-      <img alt="SUNTEK Technology Co., Ltd." src="./assets/logo-light.png" height="44">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SUNTEK-Official/.github/main/profile/assets/logo-dark.png">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SUNTEK-Official/.github/main/profile/assets/logo-light.png">
+      <img alt="SUNTEK Technology Co., Ltd." src="https://raw.githubusercontent.com/SUNTEK-Official/.github/main/profile/assets/logo-light.png" height="44">
     </picture>
   </a>
 
@@ -31,7 +31,7 @@
     <a href="#troubleshooting--faq">FAQ</a> &nbsp;&bull;&nbsp;
     <a href="#documentation-changelog--support">Support</a>
   </p>
-  <img src="./assets/banner-product-family.webp" alt="SUNTEK SCP80 Thermal Receipt Printer SDK" width="100%">
+  <img src="https://raw.githubusercontent.com/SUNTEK-Official/.github/main/profile/assets/banner-product-family.webp" alt="SUNTEK SCP80 Thermal Receipt Printer SDK" width="100%">
 </div>
 
 ---
@@ -101,7 +101,7 @@ flowchart LR
 
 ```text
 suntek-sdk-printer-scp80/
-├── assets/                 # Official SUNTEK logos, banners & SCP-80 product render
+├── assets/                 # SCP-80 product render
 ├── sdk/
 │   ├── android/            # printersdk.jar & jniLibs/*/libserial_port_gp.so
 │   └── ios/                # PrinterSDK.framework (Release)
@@ -200,7 +200,7 @@ shasum -a 256 -c SHA256SUMS.txt
 ---
 
 <div align="center">
-  <img src="./assets/banner-about-factory.webp" alt="SUNTEK Smart Manufacturing Facility" width="100%">
+  <img src="https://raw.githubusercontent.com/SUNTEK-Official/.github/main/profile/assets/banner-about-factory.webp" alt="SUNTEK Smart Manufacturing Facility" width="100%">
   <br><br>
   <strong>SUNTEK Technology Co., Ltd.</strong> &mdash; <em>Smart Commercial Terminal Hardware Manufacturer Since 2010</em><br>
   <sub>80+ Export Countries &middot; 5,000,000+ Terminals Shipped &middot; 500+ ODM Projects &middot; ISO 9001 / ISO 14001 / ISO 27001 / CE / RoHS</sub><br>
